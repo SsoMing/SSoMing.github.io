@@ -1,11 +1,62 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset = "UTF-8">
-    <title>My Git Hub Page</title>
-  </head>
-  <body>
-    <h1>WebSite</h1>
-    <p>Simple Website hosted on Github Page</p>
-  </body>
+<!doctype html>
+<html lang="ko" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Site</title>
+  <style>
+    body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Inter, Helvetica, Arial; background:#fff; color:#0f172a;}
+    header{position:sticky; top:0; border-bottom:1px solid #e2e8f0; background:#ffffffcc; backdrop-filter:blur(8px);}
+    .container{max-width:1100px; margin:auto; padding:0 1rem;}
+    nav{display:flex; align-items:center; justify-content:space-between; padding:.9rem 0;}
+    .brand{font-weight:800;}
+    .nav-links{display:flex; gap:1rem;}
+    .nav-links a{text-decoration:none; color:#475569;}
+    section{padding:3.5rem 0; border-top:1px solid #e2e8f0;}
+    section h2{font-size:1.6rem; margin:0 0 .75rem;}
+    footer{border-top:1px solid #e2e8f0; padding:2rem 0; color:#475569; text-align:center;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">My Name</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> My Name</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
